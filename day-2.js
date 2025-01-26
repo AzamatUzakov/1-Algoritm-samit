@@ -4,6 +4,8 @@
 ///console.log(newNums);
 
 
+
+/* 
 const students = [
     { name: "Алексей", age: 17, grades: [60, 70, 80] },
     { name: "Мария", age: 19, grades: [85, 90, 95] },
@@ -26,5 +28,24 @@ let topStudents = AgeStudent.filter(student => calculateAverage(student.grades) 
 
 // Извлекаем имена студентов
 let names = topStudents.map(student => student.name);
+console.log(names);  
+*/
+//////////////////////////////////////////////////
 
-console.log(names); // ["Мария", "Ольга"]
+
+
+
+///Сумма чисел массива
+//let arr = [1, 3, 5, 7]
+//let result = arr.reduce((a, b) => a + b, 0)
+//console.log(result);
+//////////////////////////////////////////////////
+
+
+
+
+//Самое длинное слово
+let word = "Я люблю программирование".toLowerCase().split(" ")
+let ex = word.sort((a, b) => b.length - a.length)
+console.log(ex[0]);
+//////////////////////////////////////////////////
