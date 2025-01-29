@@ -45,7 +45,7 @@ console.log(names);
 
 
 //Самое длинное слово
-let word = "Я люблю программирование".toLowerCase().split(" ")
-let ex = word.sort((a, b) => b.length - a.length)
-console.log(ex[0]);
+//let word = "Я люблю программирование".toLowerCase().split(" ")
+//let ex = word.sort((a, b) => b.length - a.length)
+//console.log(ex[0]);
 //////////////////////////////////////////////////
