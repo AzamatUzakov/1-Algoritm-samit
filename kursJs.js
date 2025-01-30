@@ -32,5 +32,15 @@ console.log(cloneObj);
 ///////////////////////////////////////
 
 
+//Colback function
+
+function PrintMayNamr() {
+    console.log("Azamat");
+    
+}
+
+setTimeout(PrintMayNamr, 1000)
+
+
 
 
