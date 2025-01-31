@@ -112,3 +112,44 @@ const [firstFruit, secondFruit] = fruits
 console.log(firstFruit, secondFruit);
 /////////////////////////////////////////////////
 
+
+
+//Тернарный оператор
+
+let numberS = 20
+numberS === 2 ? console.log("Условие истенно") : console.log("Условие ложное");
+//////////////////////////////////////////////////
+
+
+//Конструктор класса
+class Peron {
+    constructor(name, gop) {
+        this.name = name
+        this.gop = gop
+    }
+
+    sayHello() {
+        console.log(`Привет меня зовут ${this.name}, и моя професия ${this.gop} `);
+
+    }
+}
+
+const user1 = new Peron("Xazrat", "DevOps")
+const litakk = new Peron("Feruz", "Frontend")
+
+user1.sayHello()
+litakk.sayHello()    
+
+//////////
+class Animal{
+    constructor(name){
+        this.name = name
+    }
+
+    makeSound(){
+        console.log(`${this.name} говорит мяу`);
+    }
+}
+let cat = new Animal("Fedya")
+cat.makeSound()
+///////////////////////////////////////////
