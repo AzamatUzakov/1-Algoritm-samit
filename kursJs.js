@@ -138,18 +138,19 @@ const user1 = new Peron("Xazrat", "DevOps")
 const litakk = new Peron("Feruz", "Frontend")
 
 user1.sayHello()
-litakk.sayHello()    
+litakk.sayHello()
 
 //////////
-class Animal{
-    constructor(name){
+class Animal {
+    constructor(name) {
         this.name = name
     }
 
-    makeSound(){
+    makeSound() {
         console.log(`${this.name} говорит мяу`);
     }
 }
 let cat = new Animal("Fedya")
 cat.makeSound()
+
 ///////////////////////////////////////////
