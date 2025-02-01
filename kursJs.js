@@ -154,3 +154,63 @@ let cat = new Animal("Fedya")
 cat.makeSound()
 
 ///////////////////////////////////////////
+
+
+
+//Promise
+const orderPizza = new Promise((resolve, reject) => {
+    let isPizzaReady = false; // Можно поменять на false, чтобы проверить reject
+
+    setTimeout(() => {
+        if (isPizzaReady) {
+            resolve("Пицца готова! 🍕"); // Успех
+        } else {
+            reject("Пицца не будет доставлена! ❌"); // Ошибка
+        }
+    }, 3000);
+});
+
+// Используем промис
+orderPizza
+    .then(result => console.log(result)) // Если успех
+    .catch(error => console.log(error))  // Если ошибка
+    .finally(() => console.log("Спасибо за заказ!")); // Выполняется в любом случае
+//////////////////////////////////////////////////////////
+
+
+
+
+//async and await
+async function fetchData() {
+    try {
+        let response = await fetch("https://jsonplaceholder.typicode.com/posts/1"); // Ожидаем ответ
+        let data = await response.json(); // Ожидаем преобразования в JSON
+        console.log("Данные:", data); // Выводим результат
+    } catch (error) {
+        console.error("Ошибка:", error); // Обрабатываем ошибку
+    }
+}
+fetchData();
+//////////////////////////////////////////
+
+
+
+//Promise async and await
+const timerPromise = () =>
+    new Promise((resolve, reject) => {
+        setTimeout(() => resolve(), 2000)
+    })
+
+const asynFn = async () => {
+    console.log("Timer start");
+    const startTime = performance.now()
+    await timerPromise()
+    const endTime = performance.now()
+console.log("Timer end", endTime - startTime);
+}
+asynFn()
+//////////////////////////////////////////
+
+
+
+
