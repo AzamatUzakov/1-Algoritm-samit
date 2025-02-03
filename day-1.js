@@ -74,6 +74,24 @@ let friends = ["Азамат", "Фаррух", "Мунира", "Лола", "Аз
     console.log(i);
 } */
 
+
+
+/* let i = 0;
+while (i < friends.length) {
+    if (friends[i][0] === "А") {
+        console.log(friends[i]);
+        break;
+    }
+    i++;
+}
+ */
+
+/* 
+for (let i = 0 + 1; i < 100 + 1; i++) {
+    console.log(i);
+} */
+
+
     for (let i = 0; i <= 50; i++) {
         if (i % 2 === 0) { // Проверяем, является ли число четным
             console.log(i); // Выводим четное число
